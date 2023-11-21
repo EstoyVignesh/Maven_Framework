@@ -11,14 +11,18 @@ import com.w3schools.pages.LoginPage;
 
 public class W3wrappers extends Sewrappers {
 	
-	public void loginW3Schools()
+	public void loginW3Schools(String username, String password)
 	{
 		
 		LoginPage loginPage= PageFactory.initElements(driver, LoginPage.class);
+		HomePage homePage= PageFactory.initElements(driver, HomePage.class);
 		
-		loginPage.setUserName("vigneshpalanisamy1969@gmail.com");
-		loginPage.setPassword("@Arvind1998");
+		loginPage.setUserName(username);
+		loginPage.setPassword(password);
 		loginPage.clickLogin();
+		
+		homePage.waitForLearning();
+		
 		
 	}
 
