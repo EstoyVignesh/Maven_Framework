@@ -151,7 +151,7 @@ public class Sewrappers {
 
 	//Explicit wait
 
-	public void WaitForElement(WebElement ele, int timeout)
+	public void waitForElement(WebElement ele, int timeout)
 	{
 		try
 		{
@@ -351,6 +351,7 @@ public class Sewrappers {
 
 	//JavascriptExecutor --> click, scrollUp, scrollDown , write for all actions we have seen
 	
+	//To ScrollDown
 	public void javascriptExecutorScrollVertical(int scrolldownValue)
 	{
 		try
@@ -366,7 +367,7 @@ public class Sewrappers {
 		}
 	}
 	
-
+	//To ScrollUp
 	
 	public void javascriptExecutorScrollHorizontal(int scrollupValue)
 	{
@@ -374,7 +375,7 @@ public class Sewrappers {
 		{
 			JavascriptExecutor js = (JavascriptExecutor)driver;
 
-			//To ScrollDown
+			
 			js.executeScript("window.scrollBy("+scrollupValue+",0);");
 		}
 		catch(Exception ex)
@@ -383,6 +384,8 @@ public class Sewrappers {
 		}
 	}
 		
+	//To ScrollDown to the End of the Content
+	
 	public void javascriptExecutorEndContent()
 	{
 		try
@@ -397,6 +400,8 @@ public class Sewrappers {
 			ex.printStackTrace();
 		}
 	}
+	
+	//To ScrollUp to the Starting of the Content
 	
 	public void javascriptExecutorStartingContent()
 	{
@@ -413,6 +418,8 @@ public class Sewrappers {
 		}
 	}
 	
+	//Scroll Right
+	
 	public void javascriptExecutorScrollRight()
 	{
 		try
@@ -428,7 +435,8 @@ public class Sewrappers {
 			ex.printStackTrace();
 		}
 	}
-	
+
+	//Print Title
 	public void javascriptExecutorTitle()
 	{
 		try
