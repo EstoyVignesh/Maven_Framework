@@ -2,12 +2,22 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-21T11:45:50 IST" name="Suite" finished-at="2023-11-21T11:46:12 IST" duration-ms="22393">
+  <suite started-at="2023-11-22T11:35:55 IST" name="Suite" finished-at="2023-11-22T11:36:14 IST" duration-ms="19036">
     <groups>
     </groups>
-    <test started-at="2023-11-21T11:45:50 IST" name="Test" finished-at="2023-11-21T11:46:12 IST" duration-ms="22393">
+    <test started-at="2023-11-22T11:35:55 IST" name="Test" finished-at="2023-11-22T11:36:14 IST" duration-ms="19036">
+      <class name="com.w3schools.utils.Reports">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.w3schools.utils.Reports@1d296da]" started-at="2023-11-22T11:35:55 IST" name="startReport" finished-at="2023-11-22T11:35:55 IST" duration-ms="581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.w3schools.utils.Reports@1d296da]" started-at="2023-11-22T11:36:14 IST" name="endReport" finished-at="2023-11-22T11:36:15 IST" duration-ms="1168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.w3schools.utils.Reports -->
       <class name="com.w3schools.tests.LoginTest">
-        <test-method signature="loginWithValidCredentials()[pri:0, instance:com.w3schools.tests.LoginTest@7c7b252e]" started-at="2023-11-21T11:45:50 IST" name="loginWithValidCredentials" finished-at="2023-11-21T11:46:12 IST" duration-ms="22249" status="PASS">
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:com.w3schools.tests.LoginTest@327514f]" started-at="2023-11-22T11:35:55 IST" name="loginWithValidCredentials" finished-at="2023-11-22T11:36:14 IST" duration-ms="18961" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
