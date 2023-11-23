@@ -148,10 +148,13 @@ public class Sewrappers {
 		{
 			Select sel = new Select(ele);
 			sel.selectByValue(value);
+			Reports.reportStep("PASS","Successfully Selected the value based on value");
 		}
 		catch(Exception ex)
 		{
+			Reports.reportStep("FAIL","Problem while selecting the value");
 			ex.printStackTrace();
+			
 		}
 	}
 
@@ -163,9 +166,11 @@ public class Sewrappers {
 		{
 			Select sel = new Select(ele);
 			sel.selectByVisibleText(visibleText);
+			Reports.reportStep("PASS","Successfully selected the value using visibleText");
 		}
 		catch(Exception ex)
 		{
+			Reports.reportStep("FAIL","Problem while selecting visibleText");
 			ex.printStackTrace();
 		}
 	}
@@ -183,7 +188,7 @@ public class Sewrappers {
 		}
 		catch(Exception ex)
 		{
-			Reports.reportStep("FAIL","Problem while waiting for the element ");
+			Reports.reportStep("FAIL","Problem while waiting for the element");
 
 			ex.printStackTrace();
 		}
@@ -201,9 +206,11 @@ public class Sewrappers {
 					.withTimeout(Duration.ofSeconds(timeout));
 
 			wait.until(ExpectedConditions.visibilityOf(ele));
+			Reports.reportStep("PASS","Successfully waited for the element using explicit wait");
 		}
 		catch(Exception ex)
 		{
+			Reports.reportStep("FAIL","Problem while waiting for the element");
 			ex.printStackTrace();
 		}
 	}
@@ -218,10 +225,12 @@ public class Sewrappers {
 		{
 			Actions action = new Actions(driver);
 			action.doubleClick(ele).build().perform();
+			Reports.reportStep("PASS","Successfully performed the doubleClick action");
 
 		}
 		catch(Exception ex)
 		{
+			Reports.reportStep("FAIL","Problem while performing doubleClick action");
 			ex.printStackTrace();;
 		}
 	}
@@ -232,10 +241,12 @@ public class Sewrappers {
 		{
 			Actions action = new Actions(driver);
 			action.contextClick(ele).build().perform();
+			Reports.reportStep("PASS","Successfully performed the contextClick action");
 
 		}
 		catch(Exception ex)
 		{
+			Reports.reportStep("FAIL","Problem while performing contextClick action");
 			ex.printStackTrace();
 		}
 	}
@@ -246,10 +257,12 @@ public class Sewrappers {
 		{
 			Actions action = new Actions(driver);
 			action.moveToElement(ele).build().perform();
+			Reports.reportStep("PASS","Successfully performed moveToElement action");
 
 		}
 		catch(Exception ex)
 		{
+			Reports.reportStep("FAIL","Problem while performing moveToElement action");
 			ex.printStackTrace();
 		}
 	}
@@ -261,10 +274,12 @@ public class Sewrappers {
 		{
 			Actions action = new Actions(driver);
 			action.dragAndDrop(source,target).build().perform();
+			Reports.reportStep("PASS","Successfully performed dragAndDrop action");
 
 		}
 		catch(Exception ex)
 		{
+			Reports.reportStep("FAIL","Problem while performing dragAndDrop action");
 			ex.printStackTrace();
 		}
 	}
@@ -275,10 +290,12 @@ public class Sewrappers {
 		{
 			Actions action = new Actions(driver);
 			action.click(ele).build().perform();
+			Reports.reportStep("PASS","Successfully performed the click action");
 
 		}
 		catch(Exception ex)
 		{
+			Reports.reportStep("FAIL","Problem while performing click action");
 			ex.printStackTrace();
 		}
 	}
@@ -289,9 +306,11 @@ public class Sewrappers {
 		try
 		{
 			driver.switchTo().frame(index);
+			Reports.reportStep("PASS","Successfully switched to the frame based on index");
 		}
 		catch(Exception ex)
 		{
+			Reports.reportStep("FAIL","Problem while switching to the frame");
 			ex.printStackTrace();
 		}
 	}
@@ -302,9 +321,11 @@ public class Sewrappers {
 		try
 		{
 			driver.switchTo().frame(nameId);
+			Reports.reportStep("PASS","Successfully switched to the frame based on nameId");
 		}
 		catch(Exception ex)
 		{
+			Reports.reportStep("FAIL","Problem while switching to the frame");
 			ex.printStackTrace();
 		}
 	}
@@ -315,9 +336,11 @@ public class Sewrappers {
 		try
 		{
 			driver.switchTo().frame(ele);
+			Reports.reportStep("PASS","Successfully switched to the frame based on WebElement");
 		}
 		catch(Exception ex)
 		{
+			Reports.reportStep("FAIL","Problem while switching to the frame");
 			ex.printStackTrace();
 		}
 	}

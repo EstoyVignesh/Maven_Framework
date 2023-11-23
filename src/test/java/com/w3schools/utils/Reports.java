@@ -1,6 +1,7 @@
 package com.w3schools.utils;
 
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -24,7 +25,7 @@ public class Reports {
 
 	public static ExtentTest extentTest;
 
-	@BeforeSuite(alwaysRun=true)
+	@BeforeSuite//(alwaysRun=true)
 	public void startReport()
 	{
 		try
@@ -44,6 +45,7 @@ public class Reports {
 		}
 	}
 
+	@BeforeClass
 	public void setTCDesc(String testcaseName)
 	{
 		try
@@ -74,7 +76,7 @@ public class Reports {
 		}
 	}
 
-	@AfterSuite(alwaysRun=true)
+	@AfterSuite
 	public void endReport()
 	{
 		try

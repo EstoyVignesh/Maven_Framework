@@ -50,7 +50,7 @@ public class Profile extends Sewrappers
 	
 	public void scroll(int srollTo)
 	{
-		waitForElement(profileLink,20);
+		//waitForElement(profileLink,20);
 		javascriptExecutorScrollToWebelement(srollTo);
 		
 	}

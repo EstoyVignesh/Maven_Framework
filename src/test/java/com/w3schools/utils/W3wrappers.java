@@ -37,7 +37,7 @@ public class W3wrappers extends Sewrappers {
 		profiles.profileFrame();
 	    profiles.profilelnk();
 	    
-	    profiles.scroll(2000);
+	    profiles.scroll(1300);
 	    profiles.edit();
 	    profiles.sendKeys(saveButton);
 	}	
