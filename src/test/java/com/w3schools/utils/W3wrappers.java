@@ -1,8 +1,10 @@
 package com.w3schools.utils;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
+import com.w3schools.pages.BrowseTutorials;
 import com.w3schools.pages.HomePage;
 import com.w3schools.pages.LoginPage;
 import com.w3schools.pages.Profile;
@@ -22,6 +24,8 @@ public class W3wrappers extends Sewrappers {
 		loginPage.setUserName(username);
 		loginPage.setPassword(password);
 		loginPage.clickLogin();
+		
+		captureScreenshot("profile");
 				
 		homePage.waitForLearning();
 		
@@ -41,6 +45,16 @@ public class W3wrappers extends Sewrappers {
 	    profiles.edit();
 	    profiles.sendKeys(saveButton);
 	}	
+	
+	public void broseTutor()
+	{
+		BrowseTutorials browsetut = PageFactory.initElements(driver, BrowseTutorials.class);
+		
+		browsetut.browseTutorials();
+		browsetut.searchBar("Learn Java");
+		browsetut.titlesall();
+		
+	}
 		
 
 }

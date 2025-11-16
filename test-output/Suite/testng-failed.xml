@@ -3,11 +3,11 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.w3schools.tests.ProfileTest">
+      <class name="com.demoblaze.tests.LoginTest">
         <methods>
           <include name="loginWithValidCredentials"/>
         </methods>
-      </class> <!-- com.w3schools.tests.ProfileTest -->
+      </class> <!-- com.demoblaze.tests.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

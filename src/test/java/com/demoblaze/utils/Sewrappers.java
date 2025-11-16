@@ -1,4 +1,4 @@
-package com.w3schools.utils;
+package com.demoblaze.utils;
 
 import java.io.File;
 import java.time.Duration;

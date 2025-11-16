@@ -1,4 +1,4 @@
-package com.w3schools.tests;
+package com.demoblaze.tests;
 /*
  * This class is going to contain all the test cases with regard to Login functionality in W3schools
  */
@@ -6,12 +6,14 @@ package com.w3schools.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.w3schools.utils.Reports;
-import com.w3schools.utils.Sewrappers;
-import com.w3schools.utils.W3wrappers;
+import com.demoblaze.utils.Reports;
+import com.demoblaze.utils.SBwrappers;
+import com.demoblaze.utils.Sewrappers;
+
+
 
 public class LoginTest extends Sewrappers {
-	W3wrappers w3= new W3wrappers();
+	SBwrappers w3= new SBwrappers();
 	Reports report = new Reports();
 		
 	
@@ -20,9 +22,9 @@ public class LoginTest extends Sewrappers {
 	{
 		try
 		{
-			report.setTCDesc("Validating login in W3 schools with valid credentials");
-			launchBrowser("https://profile.w3schools.com/");
-			w3.loginW3Schools("vickyphysics1998@gmail.com","@Vigneshguvi11");
+			report.setTCDesc("Validating login in sandboxtrial with valid credentials");
+			launchBrowser("https://jithya.sandboxtrial.com/login?&chkie=true");
+			w3.loginSB("dentalclinic@gmail.com","demo@123");
 			
 			
 						
