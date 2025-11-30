@@ -1,4 +1,4 @@
-package com.demoblaze.pages;
+package com.ekko.pages;
 
 public class SignupPage {
 

@@ -1,4 +1,4 @@
-package com.demoblaze.utils;
+package com.ekko.utils;
 
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;

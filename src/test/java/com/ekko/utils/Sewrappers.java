@@ -1,4 +1,4 @@
-package com.demoblaze.utils;
+package com.ekko.utils;
 
 import java.io.File;
 import java.time.Duration;

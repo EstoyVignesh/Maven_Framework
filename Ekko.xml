@@ -3,10 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-		<class name="com.demoblaze.utils.Sewrappers" />
-			<class name="com.demoblaze.utils.SBwrappers" />
-			<class name="com.demoblaze.utils.Reports" />
-      <class name="com.demoblaze.tests.LoginTest"/>
+		<class name="com.ekko.utils.Sewrappers" />
+			<class name="com.ekko.utils.SBwrappers" />
+			<class name="com.ekko.utils.Reports" />
+      <class name="com.ekko.tests.LoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

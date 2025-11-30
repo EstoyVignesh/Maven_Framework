@@ -1,4 +1,4 @@
-package com.demoblaze.tests;
+package com.ekko.tests;
 
 public class SignupTest {
 

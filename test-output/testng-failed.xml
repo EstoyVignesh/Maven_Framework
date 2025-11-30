@@ -3,11 +3,11 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.demoblaze.tests.LoginTest">
+      <class name="com.ekko.tests.LoginTest">
         <methods>
           <include name="loginWithValidCredentials"/>
         </methods>
-      </class> <!-- com.demoblaze.tests.LoginTest -->
+      </class> <!-- com.ekko.tests.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
