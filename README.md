@@ -5,15 +5,18 @@
 This project contains the Selenium + Java + TestNG automation framework for validating the Ekko Patient Module.
 The framework is built using Maven, supports TestNG suite execution, and captures screenshots for success and failure scenarios.
 
-Maven_Framework/
- └── Ekko/
-      ├── src/test/java/
-      │     └── tests/
-      │            └── LoginTest.java
-      ├── Ekko.xml                # TestNG Suite File
-      ├── Screenshots/            # Execution screenshots
-      ├── Reports/                # TestNG/Extent reports (if configured)
-      └── pom.xml                 # Maven build file
+The project code is located inside the Ekko folder of the framework branch, following a clean Page Object Model (POM) structure.
+
+Ekko/
+ ├── ekko.pages/        # All page classes (Page Objects)
+ ├── ekko.tests/        # All TestNG test classes (LoginTest, etc.)
+ ├── ekko.utils/        # Wrapper classes, utilities, drivers, reporting helpers
+ ├── Ekko.xml           # TestNG suite file to run the automation
+ ├── Screenshots/       # Auto-generated failure/success screenshots
+ ├── Reports/           # TestNG/Extent reports (if configured)
+ └── pom.xml            # Maven dependencies and build configuration
+
+
 
 ✅ Prerequisites
 
