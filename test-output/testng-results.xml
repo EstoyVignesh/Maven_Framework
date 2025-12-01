@@ -2,22 +2,22 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-30T14:27:26 IST" name="Suite" finished-at="2025-11-30T14:28:16 IST" duration-ms="49865">
+  <suite started-at="2025-12-01T13:48:22 IST" name="Suite" finished-at="2025-12-01T13:48:41 IST" duration-ms="19787">
     <groups>
     </groups>
-    <test started-at="2025-11-30T14:27:26 IST" name="Test" finished-at="2025-11-30T14:28:16 IST" duration-ms="49865">
+    <test started-at="2025-12-01T13:48:22 IST" name="Test" finished-at="2025-12-01T13:48:41 IST" duration-ms="19787">
       <class name="com.ekko.tests.LoginTest">
-        <test-method signature="loginWithValidCredentials()[pri:0, instance:com.ekko.tests.LoginTest@dd8ba08]" started-at="2025-11-30T14:27:26 IST" name="loginWithValidCredentials" finished-at="2025-11-30T14:28:16 IST" duration-ms="49817" status="PASS">
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:com.ekko.tests.LoginTest@dd8ba08]" started-at="2025-12-01T13:48:22 IST" name="loginWithValidCredentials" finished-at="2025-12-01T13:48:41 IST" duration-ms="19755" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
       </class> <!-- com.ekko.tests.LoginTest -->
       <class name="com.ekko.utils.Reports">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.ekko.utils.Reports@4fb0f2b9]" started-at="2025-11-30T14:27:26 IST" name="startReport" finished-at="2025-11-30T14:27:26 IST" duration-ms="287" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.ekko.utils.Reports@4fb0f2b9]" started-at="2025-12-01T13:48:21 IST" name="startReport" finished-at="2025-12-01T13:48:22 IST" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.ekko.utils.Reports@4fb0f2b9]" started-at="2025-11-30T14:28:16 IST" name="endReport" finished-at="2025-11-30T14:28:17 IST" duration-ms="785" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.ekko.utils.Reports@4fb0f2b9]" started-at="2025-12-01T13:48:42 IST" name="endReport" finished-at="2025-12-01T13:48:42 IST" duration-ms="521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

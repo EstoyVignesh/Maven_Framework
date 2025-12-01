@@ -12,8 +12,8 @@ import com.ekko.utils.Sewrappers;
 
 public class LoginPage extends Sewrappers {
 
-	@FindBy(xpath="//a[text()='Login']")
-	public WebElement clogin;
+//	@FindBy(xpath="//a[text()='Login']")
+//	public WebElement clogin;
 	
 	@FindBy(id="username")
 	public WebElement username;
@@ -43,12 +43,7 @@ public class LoginPage extends Sewrappers {
     
 	
 	
-	public void clickLogin()
-	{
-		waitForElement(clogin,20);
-		clickElement(clogin);
-	}
-	
+
 	
 	public void setUserName(String user)
 	{

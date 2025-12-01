@@ -20,7 +20,6 @@ public class SBwrappers extends Sewrappers {
 		LoginPage loginPage= PageFactory.initElements(driver, LoginPage.class);
 		
 		
-		loginPage.clickLogin();
 		loginPage.setUserName(username);
 		loginPage.clickContinue();		
 		loginPage.setPassword(password);

@@ -26,27 +26,20 @@ public class LoginTest extends Sewrappers {
 		try
 		{
 			report.setTCDesc("Validating login in sandboxtrial with valid credentials");
-			launchBrowser("https://ekkomd.com/");
+			launchBrowser("https://app-dev.ekkomd.com/");
 			LoginPage page = w3.loginSB("vignesh000vky@gmail.com","@K0nnect");
-			
-			
-			//validation for checking the title
-//			Assert.assertTrue(driver.getTitle().equals("patients"));
-//			System.out.println("Assertion Passed");
-//			Reports.reportStep("INFO","Assertion passed by title");
-			
 			
 
 			// 1. Get patient names
 	        List<String> names = page.getAllPatientNames();
 
 	        // 2. Assert patient count is > 0
-	        Assert.assertTrue(names.size() > 0, "❌ Patient list is empty!");
+	        Assert.assertTrue(names.size() > 0, "Patient list is empty!");
 
 	        int count = page.getPatientCount();
 	        Assert.assertTrue(
 	            count >= 1,
-	            "❌ Expected at least 1 patient, but found: " + count
+	            "Expected at least 1 patient, but found: " + count
 	        );
 
 	        System.out.println("Patient Count = " + count);
@@ -54,6 +47,10 @@ public class LoginTest extends Sewrappers {
 	        names.forEach(System.out::println);
 			Reports.reportStep("INFO","Assertion passed by Count");
 			System.out.println("Assertion Passed");
+			
+			
+			
+			
 
 //            // 3. Validate initials + name on each card
 //            Assert.assertTrue(
@@ -65,6 +62,11 @@ public class LoginTest extends Sewrappers {
 
 			
 //			
+			
+			//validation for checking the title
+//			Assert.assertTrue(driver.getTitle().equals("patients"));
+//			System.out.println("Assertion Passed");
+//			Reports.reportStep("INFO","Assertion passed by title");
 			
 			
 			
